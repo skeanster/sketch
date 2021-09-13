@@ -1,0 +1,12 @@
+.sketch {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 500px;
+    border: 2px solid red;
+}
+
+.black {
+    background-color: black;
+}
