@@ -9,6 +9,10 @@ a {
     color: white
 }
 
+#cube {
+    background-color: white;
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -24,6 +28,7 @@ a {
 
 .logo {
     display: flex;
+    font-weight: bold;
     font-size: 30px;
     color: white;
     background-color: #e52521;
@@ -63,9 +68,41 @@ a {
     background-color: white;
 }
 
+.red {
+    background-color: #e52521;
+}
+
 .body {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.button {
+    width: 100px;
+    height: 100px;
+}
+
+.colorPicker {
+    width:100px;
+    height: 100px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+}
+
+.sliderContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.titleEtch {
+    position: absolute;
+    top:30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
 }

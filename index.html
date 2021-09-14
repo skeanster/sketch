@@ -6,14 +6,29 @@
 </head>
 <body>
     <div class="header">
-        <div class="logo"><a href="https://skeanster.github.io/">
+        <div id="test" class="logo"><a href="https://skeanster.github.io/">
             SKEANS</a>
         </div>
         <div class="github">
             <a href="https://github.com/skeanster"><img src="images/GitHub-Mark.png" id="github"></a>
         </div>
     </div>
+    <div class="sliderContainer">
+        <p class="slider label">Choose Grid Size:</p>
+        <input id="range" type="range" min="4" max="64" value="16" onchange="eraseGrid(); createGrid(this.value); resetBlack()">
+    </div>
+    <div class="controls">
+        <button class="button" type="button" onclick="addListenerRed()">red</button>
+        <button class="button" type="button" onclick="addListenerBlack()">black</button>
+        <button class="button" type="button" onclick="addListenerRandom()">Random</button>
+        <button class="button" type="button" onclick="eraseGrid(); createGrid(16); resetBlack()">Reset</button>
+        <input class="colorPicker" value="#1fe55b"  type="color" onclick="addListenerUser(this.value)" onchange="addListenerUser(this.value)">
+
+    </div>
     <div class="body">
         <div class="sketch" id="sketch"></div>
+    </div>
+    <div class="title">
+        <div class="titleEtch">.etch && .sketch</div>
     </div>
 </body>
