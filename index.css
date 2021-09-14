@@ -73,10 +73,9 @@ a {
 }
 
 .body {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
 }
 
 .button {
@@ -92,6 +91,7 @@ a {
 .controls {
     display: flex;
     justify-content: center;
+    gap: 10px;
 }
 
 .sliderContainer {
