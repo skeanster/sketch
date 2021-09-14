@@ -1,5 +1,7 @@
 let sketch = document.querySelector('#sketch')
 
+userNumber= prompt('grid size?')
+
 let createGrid = function(number) {
     let cubeW= ((1/number)*100)
     let cubeH= ((1/number)*100)
@@ -9,13 +11,15 @@ let createGrid = function(number) {
     div.style.width=(cubeW+'%')
     div.style.height=(cubeH+'%')
     div.id = 'cube'
+    div.classList.add('white')
     sketch.appendChild(div)
     }
 }
 
-createGrid(32) 
+createGrid(userNumber) 
 
 function makeBlack() {
+    this.classList.remove('white')
     this.classList.add('black')
   
 }

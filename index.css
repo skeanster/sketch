@@ -1,12 +1,71 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    width: 100%;
+    border: 1px solid grey;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
+
+.logo {
+    display: flex;
+    font-size: 30px;
+    color: white;
+    background-color: #e52521;
+    transform: skewx(-10deg);
+    padding: 6px;
+    margin: 8px;
+    margin-left: 16px;
+}
+
+.github {
+    display: flex;
+}
+
+
+#github {
+    width: 50px;
+    display: flex;
+    margin-right: 6px;
+}
+
 .sketch {
-    padding: 20px;
+    padding: 10px;
     display: flex;
     flex-wrap: wrap;
     height: 500px;
     width: 500px;
-    border: 2px solid red;
+    border: 20px solid #e52521;
+    border-radius: 15px;
+    background-color: #e52521;
 }
 
 .black {
     background-color: black;
+}
+
+.white {
+    background-color: white;
+}
+
+.body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
